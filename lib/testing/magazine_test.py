@@ -28,12 +28,12 @@ class TestMagazine:
         assert magazine_1.name == "New Yorker"
 
         # comment out the next two lines if using Exceptions
-        magazine_2.name = 2
-        assert magazine_2.name == "AD"
+        #magazine_2.name = 2
+        #assert magazine_2.name == "AD"
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     Magazine(2, "Numbers")
+        with pytest.raises(Exception):
+           Magazine(2, "Numbers")
 
     def test_name_len(self):
         """magazine name is between 2 and 16 characters, inclusive"""
